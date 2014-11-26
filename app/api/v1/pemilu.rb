@@ -57,7 +57,7 @@ module Pemilu
       get do
         indices = Array.new
 
-        LocalIndex.group('name').count
+        LocalIndex.group('nama').count
           .each do |field|
             indices << {
               nama: field[0],
